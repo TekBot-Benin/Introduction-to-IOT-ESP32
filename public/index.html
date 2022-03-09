@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Firebase App</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+    // REPLACE WITH YOUR web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBinHXnGhGlzlqho5nPnjRe9h-jbYC-lCk",
+      authDomain: "maison-89f51.firebaseapp.com",
+      databaseURL: "https://maison-89f51-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "maison-89f51",
+      storageBucket: "maison-89f51.appspot.com",
+      messagingSenderId: "455334727203",
+      appId: "1:455334727203:web:15777d91713e2ec1af2b96"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+</script>
+<script src="app.js" defer></script>
+
+</head>
+<body>
+    <h1>ESP32 Firebase Web App Example</h1>
+    <p>Reading int: <span id="reading-int"></span></p>
+    <p>Reading float: <span id="reading-float"></span></p>
+</body>
+</html>
